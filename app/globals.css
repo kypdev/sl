@@ -94,4 +94,15 @@
     width: 100%;
     z-index: 2;
   }
+
+  .promotion {
+    background: rgba(0, 0, 0, 0.856);
+    border: 5px solid #15E810;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    -webkit-box-shadow: inset 0px 4px 50px #15E810;
+    box-shadow: inset 0px 4px 50px #15E810;
+    border-radius: 50px;
+    padding: 10px;
+  }
 }

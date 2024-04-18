@@ -9,7 +9,7 @@ const inter = Inter({ subsets: ['latin'] })
 const propmt = Prompt({
   subsets: ['latin'],
   weight: '600',
-  variable: '--font-prompt'
+  variable: '--font-prompt',
 })
 
 export const metadata: Metadata = {
@@ -24,9 +24,11 @@ export default function RootLayout({
 }>) {
   return (
     <html lang='en'>
-      <body className={`${inter.className} ${propmt.variable} bg-bgimg bg-fixed`}>
+      <body
+        className={`${inter.className} ${propmt.variable} bg-bgimg bg-fixed`}
+      >
         <Navbar />
-        {children}
+        <div className='container promotion h-screen mt-10'>{children}</div>
         <Footer />
       </body>
     </html>
