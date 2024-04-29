@@ -25,11 +25,14 @@ export default function RootLayout({
   return (
     <html lang='en'>
       <body
-        className={`${inter.className} ${propmt.variable} bg-bgimg bg-fixed`}
+        // className={`${inter.className} ${propmt.variable} bg-bgimg bg-fixed`}
+        className={`${inter.className} ${propmt.variable}`}
       >
-        <Navbar />
-        <div className='container promotion h-screen mt-10'>{children}</div>
-        <Footer />
+        {/* <Navbar /> */}
+        {/* <div className='container promotion h-screen mt-10'> */}
+        {children}
+        {/* </div> */}
+        {/* <Footer /> */}
       </body>
     </html>
   )
